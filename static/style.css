@@ -1,0 +1,684 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Khula&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+
+/* NAVBAR CSS START */
+
+#logo{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 0 14px;
+}
+
+#logo img {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 32px;
+    width: 100%;
+    filter: brightness(2.5);
+    padding: 2px 315px;
+}
+#navbar{
+    background-color: #000000;
+    padding: 3px 12px;
+    
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+#navbar li{
+    list-style: none;
+    color: white;
+    color: black;
+}
+
+#navbar li a{
+    padding: 7px 11px;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+}
+#navbar li a:hover{
+    color: pink;
+}
+
+/* NAVBAR CSS END */
+
+/* INTRO SECTION CSS START */
+
+#introSection{
+    padding-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    height: 100vh;
+    background: center/cover no-repeat url("/static/img/about-1.jpg");
+}
+
+#introSection div.small{
+    font-size: 2rem;
+    color: rgb(10, 10, 10);
+}
+/* INTRO SECTION CSS END */
+
+
+/* MISSION SECTION CSS START*/
+/* #missionSection{
+  
+} */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0.6em 0;
+    color: #AD4159;
+  }
+  .column {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+  }
+  .card {
+    padding: 3.1em 1.25em;
+    text-align: center;
+    background-repeat: no-repeat;
+    border: 2px solid #AD4159;
+    background-position: 0 0.62em;
+    box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.15);
+    border-radius: 0.5em;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .card .img {
+    height: 5em;
+    width: 2em;
+    margin-left: -63px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+  }
+  .img:before {
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  .card h3 {
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #070024;
+  }
+  .card p {
+    line-height: 2em;
+    color: #625a71;
+  }
+  .card:hover {
+    background-position: 0;
+  }
+  .card:hover .img:before {
+    height: 2.25em;
+    width: 2.25em;
+  }
+/* MISSION SECTION CSS END*/
+
+
+/* TIMER SECTION CSS START */
+#timerSection{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url("/static/img/timer-section.jpg");
+  background-size: cover;
+  overflow: hidden;
+  
+}
+
+#timerSection h2{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 3rem;
+  font-weight: 1000;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+
+.clock{
+  display: flex;
+}
+
+.clock div{
+  margin: 5px;
+  position: relative;
+}
+
+.clock span{
+  width: 100px;
+  height: 80px;
+  background-color: slateblue;
+  opacity: .8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  text-shadow: 2px px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text{
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: darkblue;
+  opacity: 0.8;
+}
+
+
+/* TIMER SECTION CSS END */
+
+
+/* LATEST ARTICLES START */
+.outer-container{
+  height: 100vh;
+}
+
+#inner-container{
+  /* border: 2px solid red; */
+  padding: 25px 40px;
+  display: inline-flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-container > h1{
+  color: #AD4159;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.right-container{
+  display: flex;
+  flex-direction: row;
+  height: 190px;
+  padding: 5px 15px;
+  /* border: 2px solid blue; */
+}
+
+.right-container img{
+  height: 185px;
+  width: 200px;
+}
+
+.left-container{
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+  height: 190px;
+  width: 50%;
+}
+
+.heading{
+  color: #0B2284;
+  /* margin: -17px 3px; */
+}
+
+.date{
+  color: gray;
+  /* margin: -17px 3px */
+}
+
+.info{
+  font-size: 1.2rem;
+  /* margin: 15px 3px */
+}
+/* LATEST ARTICLES END */
+
+/* BOOKING SECTION START */
+.booking{
+  background: #aa4b6b;
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+  height: 80vh;
+  color: white;
+}
+
+.booking h1{
+  font-size: 5rem;
+  text-align: center;
+  margin: auto;
+  padding: 60px 25px;
+}
+
+.booking p{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5px 15px;
+}
+
+button{
+  margin:auto;
+  display:block;
+}
+
+.contact-button{
+  border: 2px solid black;
+  color: rgb(209, 55, 176);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 50px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #555555;
+  color: white;
+}
+/* BOOKING SECTION END */
+
+
+/* FOOTER CSS START */
+footer{
+  background: rgb(255, 255, 255);
+  height: auto;
+  padding-top: 40px;
+  color: #AD4159;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h4{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #0B2284;
+}
+
+
+/* /////////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////////// */
+
+/* ABOUT SECTION START */
+
+.heading-about{
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.info-about{
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.image-about{
+  text-align: center;
+}
+
+#outer-container-about{
+  margin: 40px 30px;
+}
+
+
+
+.column-about {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 5px 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .column-about {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card-about {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px 50px;
+}
+
+.container-about {
+  padding: 0 16px;
+}
+
+.container-about::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title-about {
+  color: grey;
+}
+
+.button-about {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-about:hover {
+  background-color: #555;
+}
+
+/* ABOUT SECTION END */
+
+
+/* /////////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////////// */
+
+/* CONTACT SECTION START */
+
+
+#contact-container{
+  height: 150vh;
+  width: 70%;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  border-radius: 10px;
+  /* border: 2px solid brown; */
+  overflow: hidden;
+}
+
+.div1{
+  background-color: white;
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+  box-shadow: 0 0 2.5em rgba(136, 29, 118, 1);
+}
+
+.div2 img{
+  height: 800px;
+}
+
+.div2{
+  background-color: aquamarine;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-container{
+display: flex;
+flex-direction: column;
+}
+
+.contact-heading{
+color: red;
+padding: 10px 2px;
+font-size: 2rem;
+
+}
+
+.info{
+padding: 10px 2px;
+}
+
+.text{
+margin: 10px 1px;
+font-weight: bold;
+}
+
+.text span{
+  font-weight: normal;
+  margin-left: 8px;
+  font-size: 1.3rem;
+}
+
+
+/* button {
+overflow: visible;
+}
+
+button, select {
+text-transform: none;
+} */
+
+input, select, textarea {
+color: #5A5A5A;
+font: inherit;
+margin: 0;
+}
+
+input {
+line-height: normal;
+}
+
+textarea {
+overflow: hidden;
+}
+
+
+form {
+padding: 37.5px;
+margin: 1px 0;
+}
+
+
+.email {
+float: right;
+width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+background: none;
+border: none;
+border-bottom: solid 2px #474544;
+color: #474544;
+font-size: 1.000em;
+font-weight: 400;
+letter-spacing: 1px;
+margin: 0em 0 1.875em 0;
+padding: 0 0 0.875em 0;
+text-transform: uppercase;
+width: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+outline: none;
+padding: 0 0 0.875em 0;
+}
+
+.message {
+float: none;
+}
+
+.name {
+float: left;
+width: 45%;
+}
+
+select {
+background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+outline: none;
+-moz-appearance: none;
+-webkit-appearance: none;
+}
+
+select::-ms-expand {
+display: none;
+}
+
+.subject {
+width: 100%;
+}
+
+.telephone {
+width: 100%;
+}
+
+textarea {
+line-height: 150%;
+height: 150px;
+resize: none;
+width: 100%;
+}
+
+::-webkit-input-placeholder {
+color: #474544;
+}
+
+:-moz-placeholder { 
+color: #474544;
+opacity: 1;
+}
+
+::-moz-placeholder {
+color: #474544;
+opacity: 1;
+}
+
+:-ms-input-placeholder {
+color: #474544;
+}
+
+#form_button {
+background: none;
+border: solid 2px #474544;
+color: #474544;
+cursor: pointer;
+display: inline-block;
+font-family: 'Helvetica', Arial, sans-serif;
+font-size: 0.875em;
+font-weight: bold;
+outline: none;
+padding: 20px 35px;
+text-transform: uppercase;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+
+#form_button:hover {
+background: #474544;
+color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+#contact-container {
+  margin: 20px auto;
+  width: 95%;
+}
+}
+/* 
+@media screen and (max-width: 480px) {
+h1 {
+  font-size: 26px;
+}
+
+.underline {
+  width: 68px;
+}
+
+#form_button {
+  padding: 15px 25px;
+}
+}
+
+@media screen and (max-width: 420px) {
+h1 {
+  font-size: 18px;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+}
+
+.underline {
+  width: 53px;
+}
+
+input[type='text'], [type='email'], select, textarea {
+  font-size: 0.875em;
+}
+} */
+
+
+/* CONTACT SECTION END */

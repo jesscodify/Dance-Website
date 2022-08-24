@@ -1,0 +1,113 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+      include ../static/responsive.css
+
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo2.png")
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="#") Services]
+            li #[a(href="/contact") Contact Us]
+    
+    section#introSection 
+        div Classical ballet school 
+        div.small based in New York
+
+    section#missionSection
+      .row
+        h1 Why should you learn to dance?
+      .row
+        // Column One
+        .column
+          .card
+            .img
+              img(src='/static/img/icon-2.png')
+            h3 User Friendly
+            p
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              | asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
+              | commodi.
+        // Column Two
+        .column
+          .card
+            .img
+              img(src='/static/img/icon-2.png')
+            h3 Super Secure
+            p
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              | asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
+              | commodi.
+        // Column Three
+        .column
+          .card
+            .img
+              img(src='/static/img/icon-2.png')
+            h3 Quick Support
+            p
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              | asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
+              | commodi.
+
+    section#timerSection
+      h2 Next Show in
+      .clock
+        div
+          span#days 00
+          span.text Days
+        div
+        div
+          span#hours 00
+          span.text Hours
+        div
+          span#minutes 00
+          span.text Minutes
+        div
+          span#seconds 00
+          span.text Seconds
+
+    .outer-container
+      h1 Latest Articles
+      #inner-container
+        .right-container
+          img(src='/static/img/3.jpg')
+        .left-container
+          .heading
+            h1 Peek behind the curtain of our school
+          .date
+            h3 28/05/2022
+          .info
+            | This is where your text starts. You can click here and start typing. Ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.
+      #inner-container
+        .right-container
+          img(src='/static/img/4.jpg')
+        .left-container
+          .heading
+            h1 Annual Performance of our star
+          .date
+            h3 30/08/2022
+          .info
+            | This is where your text starts. You can click here and start typing. Ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.
+
+    .booking
+      h1 We will get you on your toes
+      p
+        | This is where your text starts. You can click here and start typing. Aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque.
+      button.contact-button(type='button') Book a Lesson
+
+
+
+    footer
+      .footer-content
+        h4 &copy; 2022 Rhythm Street ~ Ballet school. All rights reserved.
+        p This template is designed by Jessica.
+
+
+    script
+      include ../static/script.js

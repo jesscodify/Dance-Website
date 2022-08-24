@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+      include ../static/responsive.css
+
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo2.png")
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="#") Services]
+            li #[a(href="/contact") Contact Us]
+
+
+    #contact-container
+        .div1
+            .input-container
+            h2.contact-heading Contact Us
+            p.info We&apos;re open for any suggestion or just to have a chat
+            p.text
+                | ADDRESS:
+                span 198 West 21th Street, Suite 721 New York NY 10016
+            p.text
+                | EMAIL::
+                span info@yoursite.com
+            p.text
+                | PHONE:
+                span + 1235 2355 98
+            form#contact_form(action='#', method='post')
+            .name
+                label(for='name')
+                input#name_input(type='text', placeholder='My name is', name='name', required='')
+            .email
+                label(for='email')
+                input#email_input(type='email', placeholder='My e-mail is', name='email', required='')
+            .telephone
+                label(for='name')
+                input#telephone_input(type='text', placeholder='My number is', name='telephone', required='')
+            .message
+                label(for='message')
+                textarea#message_input(name='message', placeholder="I'd like to chat about", cols='30', rows='5', required='')
+            .submit
+                input#form_button(type='submit', value='Send Message')
+            // // End form
+        .div2
+            img(src='https://images.unsplash.com/photo-1624427534699-581dd0f79284?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80', alt='')
+
+
+
